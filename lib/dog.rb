@@ -4,7 +4,11 @@ class Dog
 
   def initialize(name)
     @name = name
+<<<<<<< HEAD
     self.save
+=======
+    @@all << self
+>>>>>>> 28679ade55cb4676f58edebbbb4ddd284809a963
   end
 
   def self.all
@@ -12,6 +16,7 @@ class Dog
   end
 
   def self.print_all
+<<<<<<< HEAD
     @@all.collect do |dog_id|
       puts dog_id.name
     end
@@ -23,6 +28,9 @@ class Dog
 
   def save
     @@all << self
+=======
+    puts @@all.@name
+>>>>>>> 28679ade55cb4676f58edebbbb4ddd284809a963
   end
 
 end
